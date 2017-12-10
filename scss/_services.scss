@@ -1,0 +1,20 @@
+// Styling for the services section
+#services {
+    color: $gray-600;
+    background-color: $primary; //$my-default
+    
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+  
+}
+
+.shadow-ar{
+  -webkit-box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.13);
+  box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.13);
+}
+/* 
+section {
+  padding-top: 10px;
+} */
+}

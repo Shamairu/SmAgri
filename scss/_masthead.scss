@@ -1,0 +1,89 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: $primary;
+ /*  background-image: url('../img/hero.png') ; */
+ /*  background-repeat:no-repeat; */
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+
+  @include background-cover;
+
+  video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../img/1a.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+  .intro-text {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    color: $gray-600;
+    
+   /*  text-shadow: 2px 2px #26D59E*/
+    .intro-lead-in {
+      font-size: 20px;
+      /* font-style: italic; */
+        font-weight: 700;
+      line-height: 22px;
+      margin-bottom: 25px;   
+      @include serif-font;
+    }
+    .intro-lead-name{
+      color: $gray-100;
+      font-weight: 700;
+    }
+    .intro-heading {
+      font-size: 10px;
+      line-height: 50px;
+      margin-bottom: 25px;
+      @include heading-font;
+    }
+  }
+}
+@media(min-width:768px) {
+  header.masthead {
+    .intro-text {
+      font-family: 'Encode Sans Expanded', sans-serif;
+      padding-top: 512px;
+      padding-bottom: 103px;
+      color: $gray-600;
+      /* text-shadow: 2px 2px #26D59E; */
+       
+      .intro-lead-in {
+        font-size: 40px;
+        /* font-style: italic; */
+        line-height: 40px;
+        margin-bottom: 25px;
+        padding-left: 430px;
+        font-weight: 700;
+        @include serif-font;
+       
+      }
+      .intro-lead-name{
+        color: $gray-100;
+        font-weight: 700;
+      }
+      .intro-heading {
+        font-size: 16px;
+        line-height: 50px;
+        margin-bottom: 50px;
+        padding-left: 430px;
+        @include heading-font;
+      }
+    }
+  }
+}
